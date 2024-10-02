@@ -56,5 +56,15 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Games.sql" />
+    <Build Include="Tables\Users.sql" />
+    <Build Include="Tables\Modules.sql" />
+    <Build Include="Tables\ModuleLicenses.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Otto-Database.refactorlog" />
   </ItemGroup>
 </Project>
